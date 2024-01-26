@@ -39,13 +39,6 @@ export default function Signup() {
           </div>
           <div>
             <label className='text-slate-400 text-xl font-semibold w-min float-start'>
-            Username
-            </label>
-            <span className="text-red-600" aria-hidden="true">*</span>
-          </div>
-          <input className='peer shadow-md text-lg rounded-lg w-full border-2 p-2 mb-3 mt-1 active:border-sky-700/75' id='username' type='text' placeholder='username' onChange={handleChange} />
-          <div>
-            <label className='text-slate-400 text-xl font-semibold w-min float-start'>
             Email
             </label>
             <span className="text-red-600" aria-hidden="true">*</span>
@@ -56,14 +49,18 @@ export default function Signup() {
           </span>
           <div>
             <label className='text-slate-400 text-xl font-semibold w-min float-start'>
+            Username
+            </label>
+            <span className="text-red-600" aria-hidden="true">*</span>
+          </div>
+          <input className='peer shadow-md text-lg rounded-lg w-full border-2 p-2 mb-3 mt-1 active:border-sky-700/75' id='username' type='text' placeholder='username' onChange={handleChange} />
+          <div>
+            <label className='text-slate-400 text-xl font-semibold w-min float-start'>
               Password
             </label>
             <span className="text-red-600" aria-hidden="true">*</span>
           </div>
-          <input className='shadow-md text-lg rounded-lg w-full border-2 p-2 mt-1 active:border-sky-700/75 ' id='password' type='text' placeholder='password' onChange={handleChange} />
-          <a href='/password-help'className='text-slate-400 text-sm underline py-1'>
-            Forgot Password?
-          </a>
+          <input className='shadow-md text-lg rounded-lg w-full border-2 p-2 mb-1 mt-1 active:border-sky-700/75 ' id='password' type='text' placeholder='password' onChange={handleChange} />
           <button className= 'bg-sky-700/75 text-stone-300 text-xl rounded-2xl w-full p-2 my-5'>
             Sign Up
           </button>
