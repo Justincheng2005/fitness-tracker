@@ -19,6 +19,7 @@ export default function Signup() {
       body: JSON.stringify(formData),
     });
     const data = await response.json();
+    console.log(data);
   };
   console.log(formData);
 
@@ -59,7 +60,7 @@ export default function Signup() {
             </label>
             <span className="text-red-600" aria-hidden="true">*</span>
           </div>
-          <input className='shadow-md text-lg rounded-lg w-full border-2 p-2 mt-1 active:border-sky-700/75 ' id='pass' type='text' placeholder='password' onChange={handleChange} />
+          <input className='shadow-md text-lg rounded-lg w-full border-2 p-2 mt-1 active:border-sky-700/75 ' id='password' type='text' placeholder='password' onChange={handleChange} />
           <a href='/password-help'className='text-slate-400 text-sm underline py-1'>
             Forgot Password?
           </a>
