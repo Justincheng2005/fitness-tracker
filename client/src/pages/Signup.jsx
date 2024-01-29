@@ -38,7 +38,7 @@ export default function Signup() {
             <span className='text-red-700'>Track</span>
           </div>
           <div>
-            <label className='text-slate-400 text-xl font-semibold w-min float-start'>
+            <label className='text-slate-400 text-xl font-semibold w-min float-start' htmlFor='email'>
             Email
             </label>
             <span className="text-red-600" aria-hidden="true">*</span>
@@ -48,14 +48,14 @@ export default function Signup() {
             Invalid email format(person@example.com)
           </span>
           <div>
-            <label className='text-slate-400 text-xl font-semibold w-min float-start'>
+            <label className='text-slate-400 text-xl font-semibold w-min float-start' htmlFor='username'>
             Username
             </label>
             <span className="text-red-600" aria-hidden="true">*</span>
           </div>
           <input className='peer shadow-md text-lg rounded-lg w-full border-2 p-2 mb-3 mt-1 active:border-sky-700/75' id='username' type='text' placeholder='username' onChange={handleChange} />
           <div>
-            <label className='text-slate-400 text-xl font-semibold w-min float-start'>
+            <label className='text-slate-400 text-xl font-semibold w-min float-start' htmlFor='password'>
               Password
             </label>
             <span className="text-red-600" aria-hidden="true">*</span>
